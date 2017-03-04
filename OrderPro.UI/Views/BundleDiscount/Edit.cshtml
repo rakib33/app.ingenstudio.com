@@ -1,0 +1,76 @@
+﻿@model OrderPro.Model.BundleDiscount
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+     @Html.HiddenFor(model=>model.Reference)
+
+    <fieldset>
+        <legend>BundleDiscount</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VolumeFrom)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.VolumeFrom)
+            @Html.ValidationMessageFor(model => model.VolumeFrom)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VolumeTo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.VolumeTo)
+            @Html.ValidationMessageFor(model => model.VolumeTo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DiscountPercent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DiscountPercent)
+            @Html.ValidationMessageFor(model => model.DiscountPercent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ServiceCategory)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ServiceCategory)
+            @Html.ValidationMessageFor(model => model.ServiceCategory)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsExpired)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsExpired)
+            @Html.ValidationMessageFor(model => model.IsExpired)
+        </div>
+
+      @*  <div class="editor-label">
+            @Html.LabelFor(model => model.Reference)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Reference)
+            @Html.ValidationMessageFor(model => model.Reference)
+        </div>*@
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

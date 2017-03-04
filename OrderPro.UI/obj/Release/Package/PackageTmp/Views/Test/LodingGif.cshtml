@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "LodingGif";
+}
+
+<h2>LodingGif</h2>
+<aside>
+    <div>
+        <button id="stop" onclick="StopLoading()">Stop Loading</button>
+    </div>
+    <div class="buttonset">
+        <div id="Sendbtn">
+            <a id="next" class="button right" onclick="calpage()">Next <span class="arrow">»</span> </a>
+        </div>
+        <div id="load" style="text-align: center; display: none">
+            <img src="~/Images/ellipsis.gif" height="70px" />
+        </div>
+
+    </div>
+
+</aside>
+
+
+<script>
+
+    function calpage()
+
+    {
+
+        //Disable Next button after uploading image enable this
+        document.getElementById("load").style.display = "block";
+        document.getElementById("Sendbtn").style.display = "none";
+    }
+    function StopLoading()
+    {
+        //Disable Next button after uploading image enable this
+        document.getElementById("load").style.display = "none";
+        document.getElementById("Sendbtn").style.display = "block";
+    }
+</script>

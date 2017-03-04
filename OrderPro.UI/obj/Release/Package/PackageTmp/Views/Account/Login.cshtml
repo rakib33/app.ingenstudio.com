@@ -1,0 +1,42 @@
+﻿@model OrderPro.UI.Models.LoginModel
+@{
+    Layout ="~/Views/Shared/_LayoutSignInUp.cshtml";
+  
+}
+
+<div class="col-sm-8 col-md-5 center-block">
+    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "cta-signin-form", @class = "cta-signin-form" }))
+    {
+       
+        <header class="section-header text-center">
+            <h2>Ingen Studio - Login</h2>
+        </header>
+        <div class="form-group" style="font-size:14px">
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control input-lg", placeholder = "Email address", required = "required" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg", placeholder = "Password", required = "required" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="text-right forgot-password"> <a href="#">Forgot your password?</a> </div>
+
+        <div class="checkbox text-right">
+            @Html.CheckBoxFor(m => m.RememberMe)
+            @Html.LabelFor(m => m.RememberMe)        
+        </div>
+
+        <div class="form-btn">
+            <button type="submit" class="btn">SIGN IN</button>
+        </div>
+        <h3 class="text-center">Don't have an account yet? <a href="@Url.Action("Register","Account")">Sign up</a></h3>     
+    }
+</div>
+
+
+

@@ -1,0 +1,50 @@
+﻿@model OrderPro.Model.OrderFiles
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>OrderFiles</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FileName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Instruction)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Instruction)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsDelivered)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsDelivered)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsAccepted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsAccepted)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reference)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reference)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

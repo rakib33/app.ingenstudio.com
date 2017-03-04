@@ -1,0 +1,339 @@
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\PayPal.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\PayPal.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL Projects\OrderProWebSicurity\OrderPro.UI\obj\Release\OrderPro.UI.pdb
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\PayPal.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\PayPal.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL Projects\OrderPro\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL Projects\OrderPro\OrderPro.UI\obj\Release\OrderPro.UI.pdb
+E:\BOSL Projects\OrderPro\OrderPro.UI\obj\Release\OrderPro.UI.csprojResolveAssemblyReference.cache
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\PayPal.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\PayPal.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.csprojResolveAssemblyReference.cache
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL Projects\OrderPro\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.pdb
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Encription.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\PayPal.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\PayPal.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.csprojResolveAssemblyReference.cache
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL Projects\Order Pro Current Project\OrderPro.UI\obj\Release\OrderPro.UI.pdb
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Encription.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\PayPal.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\PayPal.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.csprojResolveAssemblyReference.cache
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL Projects\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.pdb
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.UI.dll.config
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.UI.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.UI.pdb
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Antlr3.Runtime.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.AspNet.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.Core.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Encription.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\EntityFramework.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.Infrastructure.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Newtonsoft.Json.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\OrderPro.Model.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\PayPal.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.Formatting.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.WebRequest.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Helpers.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.WebHost.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Mvc.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Optimization.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Razor.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Deployment.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Razor.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebGrease.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.Data.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.WebData.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Newtonsoft.Json.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\PayPal.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\EntityFramework.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.Formatting.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Net.Http.WebRequest.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Helpers.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Http.WebHost.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Mvc.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.Razor.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Deployment.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\System.Web.WebPages.Razor.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.Data.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\WebMatrix.WebData.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.AspNet.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.Core.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OAuth.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.csprojResolveAssemblyReference.cache
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.dll
+E:\BOSL_PROJECT\ORDERPro\Order Pro Current Project\Order Pro Current Project latest\OrderPro.UI\obj\Release\OrderPro.UI.pdb

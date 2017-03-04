@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IngenStudio.com</title>
+    <link rel="shortcut icon" href="~/Images/title_logoIngen.png" />
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr") 
+    
+    <link href="~/Content/css.css" rel="stylesheet" />
+
+    @*below 2 css for dropzone*@
+    <link href="~/Content/basic.css" rel="stylesheet" />
+    <link href="~/Content/dropzone.css" rel="stylesheet" />
+    @*dropzone end*@
+
+    @*this jquery make click able box Service and font awsom for icon*@  
+    <script src="~/Scripts/jquery-1.12.2.min.js"></script>
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    @*End*@
+    
+    <link href="~/Content/Layout.css" rel="stylesheet" />
+
+</head>
+<body style="background-color: #f6f6f6 !important">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="padding-top:20px !important">
+     
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                <div class="heading"> 
+                    <ul>
+                        <li>
+                            <a href="~/Home/Index" class="navbar-brand" style="background-image:url()">
+                                <img src="~/newinglogo.png" class="hedImg"  title="Ingen logo" />
+                            </a>                  
+                        </li>
+                    </ul>                 
+                    
+                </div>
+            </div>
+            <div class="navbar">
+             
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="row targetDiv">
+            <div id="target" class="col-xs-12 col-sm-12 col-md-12">
+                <script src="~/Scripts/dropzone.min.js"></script>  @*for dropzone*@
+                @RenderBody()
+            </div>
+        </div>
+        <footer class="footer-nav" style="color: black !important; margin-left: 25px">                          
+         Copyright &copy; Ingen Studio Ltd.All rights reserved.<a style="color:blue" href="http://ingenstudio.com/">www.ingenstudio.com</a>
+         <br />
+         <span style="padding-top: 5px !important;color:blue">
+             <a style="color:blue" href="http://pricing.ingenstudio.com/" target="_blank">Pricing \</a>
+             <a style="color:blue" href="#" target="_blank"> Terms \</a>
+             <a style="color:blue" href="#" target="_blank"> FAQ \</a>
+             <a style="color:blue" href="#" target="_blank"> Support \</a>
+             <a style="color:blue" href="#" target="_blank"> Contact</a>
+         </span>
+           
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+
+<script>
+$("#home").click(function () {
+
+            alert('Hited');
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿@model OrderPro.Model.Invoice
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Invoice</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.InvoiceNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InvoiceNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.InvoiceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InvoiceDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TotalAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TotalAmount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DiscountAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DiscountAmount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Currency)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Currency)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NetAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NetAmount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reference)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reference)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,163 @@
+﻿@model List<OrderPro.UI.Models.GetPaymentInfo_Result>
+@{
+    TempData["PaymentModel"] = ViewBag.PaymentModel;  
+    TempData["InvoiceNo"] = ViewBag.InvoiceNo;
+    TempData["InvoiceModel"] = ViewBag.InvoiceModel;
+    TempData["UserEmail"] = ViewBag.UserName;      
+       
+    int AddOnsHead = 0;
+    int Complxity = 0;
+    int Service = 0;
+    int Delivery = 0;
+    int grand = 0;
+    int nettotal = 0;
+}
+
+<div>
+
+<section class="container summaryBk">
+
+    <div class="summary">
+        <div class="summaryHeader">
+            <h2>Summary of your order</h2>
+            <p>See the summary and check if everything is correct.<br></p>
+        </div>
+        <div class="tableContainer" style="width:500px !important">         
+          <table class="summaryTable">          
+           
+            @foreach(var item in Model)
+             {
+                 if (item.Header == "Service"){
+                     if(Service==0)
+                     {
+                        <tr>
+                        <td style="text-align: left; color: blue; font-size: 14px">@item.Header</td>
+                        <td style="text-align: center">Qty</td>
+                        <td style="text-align: center">Rate</td>
+                        <td style="text-align: center">Amount(USD)</td>
+                        </tr>                        
+                        Service++;
+                    }
+                    
+                    <tr>
+                        <td style="text-align: right;font-size:14px">@item.Name</td>
+                        <td style="text-align: center">@item.TotalImages</td>
+                        <td style="text-align: center">@Math.Round(item.Rate.Value,2)</td>
+                        <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>                        
+                    </tr>
+                }
+
+
+                 else if (item.Header == "Complexity")
+                 {
+
+                     if (Complxity == 0)
+                     { 
+                         Complxity=1;
+                 <tr>
+                     <td colspan="4" style="text-align: left; color: blue; font-size: 14px">@item.Header</td>
+                 </tr>
+                     }
+                 <tr>
+                     <td style="text-align: right">@item.Name</td>
+                     <td style="text-align: center">@item.TotalImages</td>
+                     <td style="text-align: center">@Math.Round(item.Rate.Value,2)</td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>  
+                 </tr>
+                }
+                 else if (item.Header == "Add-Ons")
+                 {
+
+                     if (AddOnsHead == 0)
+                     {
+                        AddOnsHead=1;
+                 <tr>
+                     <td colspan="4" style="text-align: left; color: blue; font-size: 14px">@item.Header</td>
+                 </tr>
+                        
+                     }
+                    
+                 <tr>
+                     <td style="text-align: right">@item.Name</td>
+                     <td style="text-align: center">@item.TotalImages</td>
+                     <td style="text-align: center">@Math.Round(item.Rate.Value,2)</td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>  
+                 </tr>
+                     
+                                   
+                 }
+                 else if (item.Header == "Total: ")
+                 { 
+                 <tr>
+                     <td style="text-align: left; color: green">@item.Header</td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>
+                 </tr>
+                 
+                 }
+                 else if (item.Header == "Delivery")
+                 { 
+                 
+                     if (Delivery == 0)
+                     {
+                        Delivery=1;
+                        <tr>
+                        <td colspan="4" style="text-align: left; color: blue; font-size: 14px">@item.Header</td>
+                        </tr>
+                        
+                     }
+                 <tr>
+                     <td style="text-align: right;">@item.Name</td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center">@Math.Round(item.Rate.Value,2)</td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>
+                 </tr>
+                 }
+
+                 else if (item.Header == "Grand Total:" && grand==0)
+                 {
+                     grand++;
+                     <tr>
+                     <td style="text-align:left; color: green">@item.Header</td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>
+                     </tr>
+                 }
+                 else if (item.Header == "Discount" && item.Amount.Value>0)
+                 {
+                                          
+                     <tr>
+                     <td style="text-align: left; color:#b9af43">@item.Header</td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center">@item.Name</td>
+                     <td style="text-align: center">-@Math.Round(item.Amount.Value,2)</td>
+                     </tr>
+                 }
+                 else if (item.Header == "Net Amount:" && nettotal==0)
+                 {
+                     nettotal++;
+                 <tr>
+                     <td style="text-align: left; color: green">@item.Header</td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center"></td>
+                     <td style="text-align: center">@Math.Round(item.Amount.Value,2)</td>
+                 </tr>
+                 
+                 }              
+                                
+             }
+                  
+            </table>
+        </div>
+        <div style="text-align: right; padding-right: 350px; margin-top: 10px">
+            <a id="save-job" style="margin-top: 10px" target="_blank" href="@Url.Action("PaymentWithPaypal", "Paypal")">
+                @*<img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif">*@
+                <img src="~/Images/btn_xpressCheckout.gif" />
+            </a>
+        </div>
+    </div>   
+</section>
+
+</div>

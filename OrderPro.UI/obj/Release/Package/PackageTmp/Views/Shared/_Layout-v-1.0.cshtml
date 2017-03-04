@@ -1,0 +1,195 @@
+﻿
+@{
+    
+    string UserName =  Session["UserId"] as string;
+    string Version = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+  
+ }
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    <head>
+
+<title>IngenStudio.com</title>
+<link rel="shortcut icon" href="~/Images/title_logoIngen.png" />
+
+<link href="~/Content/basic.css" rel="stylesheet" />
+<link href="~/Content/dropzone.css" rel="stylesheet" />
+<link href="~/Content/mDeska92fd4e.css" rel="stylesheet" />
+<link href="~/Content/mDesk3ba3e84.css" rel="stylesheet" />
+<link href="~/bundles/Ingenclient/css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+
+        @*for comodo logo I need to add this before </head> tag*@
+       @* <script type="text/javascript"> //<![CDATA[ 
+            var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.comodo.com/" : "http://www.trustlogo.com/");
+            document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+            //]]>
+</script>*@
+
+</head>
+
+@*   for comodo logo I need to Add this before your </BODY> tag*@
+
+   
+
+<body>
+    <div class="wrapper">
+       @* <div id="load" style="display:none;text-align:center;">          
+            <img src="~/Images/loading.gif"  />
+        </div>*@
+
+        
+        <section class="topBar">
+
+            <nav id="nav">
+                <ul class="navigation">
+             @*       <li> 
+                    <a href="/" title="Clipping path service logo">
+                    <img src="~/Images/title_logoIngen.png" title="logo" />
+                </a></li>*@
+                    <li>
+                        <a class="navigate new_project" id="newProject" href="@Url.Action("Index", "Home")">New Order</a>
+                     
+                    </li>
+                    <li><a class="navigate new_quotation" id="new_quotation" href="#quotation">New Quotation</a></li>
+                    <li class="auth hidden">
+                        <a class="navigate orders" id="orders" href="#orders">Orders</a>
+                    </li>
+                  
+                    <li class="auth hidden" style="margin: 0 200px 0 12px; padding: 0;">
+                        <a class="navigate guided_tour" id="guided_tour" href="#guidedtour">Guided Tour</a>
+                    </li>                  
+                   <li class="navigate">
+                   Product Version: "22/8/2016 7:23 PM"   Order Number: @ViewBag.OrderNumber
+                  </li>
+                     
+                 @if(Request.IsAuthenticated)
+                 {   
+                              
+                    <li class="navigate" style="float:right;padding-right:50px">                
+                         <a class="Sign_Out" href="@Url.Action("LogOff","Account")">Sign Out</a>             
+                   </li> 
+                 }
+                          
+                            
+                </ul>
+                @if(!Request.IsAuthenticated)
+                {
+                <div class="login-top-buttons">
+                    <div class="not-auth text">
+                        <img src="~/Images/old_client_arrow.png" style="margin: 0 0 0 453px;" />
+                    </div>
+                    <div class="not-auth buttons">
+                     @Html.ActionLink("Login or Register", "Login", "Account", routeValues: null, htmlAttributes: new {@class="cpsbtn",@style="color: #fff; padding: 5px 15px; width:200px",id="logreg" })
+                
+                    </div>
+                </div>
+                }
+            </nav>
+
+        </section>
+        <!-- end top bar -->
+
+        <div class="clear"></div>
+
+        <section id="progress" class="span6 well"></section>
+
+        <div class="clear"></div>
+
+        <div id="target">
+      
+            
+                 <script src="~/Scripts/dropzone.min.js"></script>
+                @RenderBody()
+           
+      
+             </div>
+
+        <div class="clear"></div>
+
+        <section class="bottomBar">
+            <div class="logo">
+                <a href="http://ingenstudio.com/" title="Ingen Studio logo" target="_blank">
+                    <img src="~/Images/title_logoIngen.png" title="Ingen Studio" />
+                </a>
+            </div>
+            <div class="copyright">
+                <a href="http://ingenstudio.com/" target="_blank">Ingen Studio &copy; 2016-2017 All Right Reserved</a>
+               
+            </div>
+            <div class="footer-payment">
+                <a href="https://www.2checkout.com" title="" target="_blank">
+                    <img src="~/Images/payment_icon.png" alt="Payment Method" />
+                </a>
+            </div>
+        </section>
+        <!--end bottom bar-->
+        <!-- payment form -->
+        <form id="payment" action='https://www.2checkout.com/checkout/purchase' method='post'>
+            <input type="hidden" name="sid" value="1777032" />
+            <input type="hidden" name="mode" value="2CO" />
+            <input type='hidden' name='li_0_type' value='product' />
+            <input type="hidden" name="li_0_name" value="" />
+            <input type="hidden" name="li_0_price" value="" />
+            <input type="hidden" name="li_0_description" value="" />
+            <input type="hidden" name="custom" value="" />
+            <input type="hidden" name="x_receipt_link_url" value="http://app.clippingpathservice.com/payment/success" />
+            <input type='hidden' name='card_holder_name' value='' />
+            <input type='hidden' name='street_address' value='' />
+            <input type='hidden' name='street_address2' value='' />
+            <input type='hidden' name='city' value='' />
+            <input type='hidden' name='state' value='' />
+            <input type='hidden' name='zip' value='' />
+            <input type='hidden' name='country' value='' />
+            <input type='hidden' name='email' value='' />
+            <input type='hidden' name='phone' value='' />
+        </form>
+        <!-- end payment form -->
+        <div id="sample-img">
+            <a href="javascript:void(0);" onclick="$('#sample-img').fadeOut()">X</a>
+        </div>
+
+        <div id="transparent-overlay" style="display: none;"></div>
+
+        <div id="heavy-progress" style="display: none;">
+            Please wait while we process your images.
+            <br />
+            Note that generating thumbnail of raw files takes some time.
+            <br />
+            <img src="~/bundles/Ingenclient/images/loader.gif" />
+        </div>
+
+    </div>
+  
+
+    @RenderSection("scripts", required: false)
+
+     <script>
+
+               
+                  
+         $('#newProject').click(function () {
+
+             //alert('hitted' + totalUpload);
+             var url = "/Home/Index";
+             var fromajax = 'True'; //pass parameter
+
+             $.get(url, { fromAjax: fromajax }, function (data) {
+
+                 // $('#loadingmessage').hide(); // hide the loading message
+                 $("#target").html(data);
+
+             });
+         })
+
+     </script> 
+
+    @*<script language="JavaScript" type="text/javascript">
+        TrustLogo("~/comodo_secure_seal_76x26_transp/comodo_secure_seal_76x26_transp", "CL1", "none");
+        
+     <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>*@
+     
+</body>
+</html>

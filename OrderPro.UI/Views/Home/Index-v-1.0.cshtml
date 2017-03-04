@@ -1,0 +1,428 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //string orderNo =ViewBag.OrderNumber;
+    //string ClientCode = ViewBag.ClientCode;
+    //TempData["UserName"] = ViewBag.UserName;
+ }
+
+
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+<style>
+    .dz-max-files-reached {
+        background-color: red;
+    }
+  /*for radio button*/
+         
+label.btn span {
+  font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-check-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-check-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+ 
+
+#loadingmessage {
+position:fixed;
+top: 50%;
+left: 50%;
+background-color:#eeeeee;
+border:5px solid #68ad0e;
+width:300px;
+height:130px;
+margin-left:-150px;
+margin-top:-65px;
+-moz-border-radius: 16px;
+-webkit-border-radius: 16px;
+border-radius: 16px;
+box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+-moz-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+-webkit-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+z-index: 9002; /*above nine thousand*/
+
+     }
+
+</style>
+
+
+
+  <section id="main" class="span6 well">
+    <section class="container">
+        <aside class="complexity_info">
+            <h3>Choose type of service</h3>
+            <span>Please select the appropriate service type that match your requirement.
+                <br>
+                If you are unsure about the type of service please <a href="#support">contact us</a>.
+                @*Browser URL @ViewBag.browserUrl*@
+            </span>
+        </aside>
+        <aside class="complexity_selection">
+            @if (ViewBag.ServiceList!=null){
+           
+           foreach (var service in ViewBag.ServiceList)
+            {                      
+                     
+                <div class="selection_box">
+                  <div class="row navbar-fixed-top">
+                   <p>
+                   <img src="~/Images/Service/service1.png" />
+                   </p>
+                   <label id="@service.Reference" onclick="SelectService(this.id)">
+
+                   <input name="services" type="radio" style="display: none" />
+                   <i class="fa fa-circle-o fa-2x"></i>
+                   <i class="fa fa-check-circle-o fa-2x"></i>
+                   </label>
+                   </div>
+
+                    <div class="row" style="color: deepskyblue; font-size: 18px">@service.Name</div>
+                    <div class="row" style="margin-top: 5px !important">
+                    <p style="text-align: center">@service.Description </p>
+                    </div>
+
+
+                    @* select only one radio button name should be same col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center*@
+
+
+                </div>
+                   
+            }
+
+            }
+
+        </aside>
+
+        <aside style="width: 1110px" id="web-upload">
+            <form action="@Url.Action("SaveUploadedFile", "Ftps")" class="dropzone" id="dropzoneJsForm"></form>   @*SaveUploadedFile*@
+
+            <div style="min-height: 57px; padding-left: 50px; text-align: left;" class="dragNdrop">We support all major image format(.jpeg,.jpg,.png,.gif,.tif,.psd).You can upload maximum 500 file with 300 MB.If you want to upload more file please use our<a href="">ftp</a></div>
+        </aside>
+        <section class="taskProgressor bottom">
+            @if (Request.IsAuthenticated)
+            {               
+                
+                @Html.Hidden("OrderNo",(string)ViewBag.OrderNumber)   @*this order no is needed to upload file.we pass Client Code and Order No to dropzone for file upload*@
+                @Html.Hidden("ClientCode", (string)ViewBag.ClientCode)
+                @Html.Hidden("UserEmail", (string)ViewBag.UserName)
+                @Html.Hidden("OrderRef", (string)ViewBag.OrderRef)  @*we pass OrderRef to Instruction page rather passing OrderNo then we update Order field *@
+                
+                <div class="buttonset">
+                    <div id="Sendbtn">
+                        <a id="next" class="button right" onclick="calpage()">Next <span class="arrow">»</span> </a>
+                    </div>
+                    <div id="load" style="text-align: center; display: none">
+                        <img src="~/Images/ellipsis.gif" height="70px" />
+                    </div>
+
+                </div>        
+            }
+            else
+            {
+                <div class="buttonset button right" style="color: red">
+                    <span class="cursor">Please Login or Register</span>
+                </div>            
+            }
+
+
+
+        </section>
+
+   
+    </section>
+            </section>
+    <script type="text/javascript">
+
+        var totalUpload = 0;
+        var ServiceId = "";   
+        
+        try{
+        Dropzone.options.dropzoneJsForm = {         
+           
+                maxFilesize:300,//10240= 10 GB
+                maxFiles: 500,
+                paramName: "file",
+                autoProcessQueue: true,
+                parallelUploads: 2,
+                //don't add this attribute parallelUploads: 5,and uploadMultiple: true, its causes upload same file each time
+
+                //prevents Dropzone from uploading dropped files immediately
+                //autoProcessQueue: false,
+                
+                acceptedFiles: ".jpeg,.jpg,.png,.gif,.JPG,.PSD,.tif",
+                init: function () {
+                        
+                   
+                    //added 8-6-16
+                    //var submitButton = document.querySelector("#submit-all");
+                   // var myDropzone = this; //closure
+
+                        //send extra parameter value on action
+                    this.on("sending", function (file, xhr, formData) {
+                        formData.append("OrderNo", $("#OrderNo").val());
+                        formData.append("ClientCode", $("#ClientCode").val());
+                    });
+
+                    //submitButton.addEventListener("click", function () {                     
+                    //myDropzone.processQueue(); //tell Dropzone to process all queued files
+                    //});
+                    //end
+
+                    this.on("uploadprogress", function (file, progress) {
+                        //Disable Next button after uploading image enable this
+                        document.getElementById("load").style.display = "block";
+                        document.getElementById("Sendbtn").style.display = "none";
+                        console.log("File progress", progress);
+                    });
+
+                    this.on("complete", function (data) {
+                        console.log('hit method complete');                       
+
+                        //alert('Queued File:' + this.getQueuedFiles().length);
+                        //alert('Uploaded File:' + this.getUploadingFiles().length);
+                        if (this.getQueuedFiles().length == 0 && this.getUploadingFiles().length == 0) {
+                            document.getElementById("load").style.display = "none";
+                            document.getElementById("Sendbtn").style.display = "block";
+                        }
+
+                        //this causes an error
+                        //var res = JSON.parse(data.xhr.responseText);
+
+                    });
+
+                    console.log("method complete exicute success");
+
+                    this.on("success", function (file, response) {
+                        var imageSrc = response;
+                        console.log('get response from server');
+                        console.log('Server Response:' + response.Message);
+                        console.log('Url Path:' + response.UrlPath);
+
+                        if (response.Message === "success") {   //imageSrc == '/assets/images/offerfeatimg.jpg'
+                            console.log("success");
+                            totalUpload++;
+
+                            return file.previewElement.classList.add("dz-success");                      
+
+
+                        } 
+
+                        else {
+                            console.log('Server Responsed Failed:'+response.Message);
+
+                            //folow this link display success or error
+                            //http://stackoverflow.com/questions/20282392/invoking-an-error-from-server-response-json-in-dropzone-js
+                            file.previewElement.classList.add("dz-error");
+                            _ref = file.previewElement.querySelectorAll("[data-dz-errormessage]");
+                            _results = [];
+                            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                                node = _ref[_i];
+                                _results.push(node.textContent = "file upload error");
+                            }
+
+                            //$(".removebutton").show();
+
+                            // Create the remove button
+                            var removeButton = Dropzone.createElement("<button style='color:red'>Remove file</button>");
+                            // Capture the Dropzone instance as closure.
+                            var _this = this;
+
+                            // Listen to the click event
+                            removeButton.addEventListener("click", function (e) {
+                                // Make sure the button click doesn't submit the form:
+                                e.preventDefault();
+                                e.stopPropagation();
+                                // Remove the file preview.
+                                _this.removeFile(file);
+                                // If you want to the delete the file on the server as well,
+                                // you can do the AJAX request here.
+                            });
+
+                            // Add the button to the file preview element.
+                            file.previewElement.appendChild(removeButton);
+                            //End creating remove button
+                        
+                            return _results;
+
+                        }
+                        // this.removeFile(file); // This line removes the preview
+                    })
+                }          
+                    }
+        }
+        catch (err)
+        {
+            console.log('exception:' + err.message);
+            console.log('Exp Url Path' + response.UrlPath);
+
+            document.getElementById("load").style.display = "none";
+            document.getElementById("Sendbtn").style.display = "block";
+        }
+
+
+
+        function TotalFile() {
+            return totalUpload;
+        }
+
+        function SelectService(e) {
+            //alert(e);
+            ServiceId = e;
+        }
+
+
+        function calpage() {
+
+            var msg = "ok";
+            
+            if (ServiceId == "") {
+                alert('Please select a Service!');
+            }
+                //check if any file upload or not
+            else if (totalUpload > 0) {
+
+
+                console.log("Hit Instruction Successful.");
+
+                //display loding
+                document.getElementById("load").style.display = "block";
+                document.getElementById("Sendbtn").style.display = "none";
+
+                console.log("loading gif.");
+
+                try{
+                    //alert('hitted' + totalUpload);
+
+                    console.log('before Hit');
+                    var url = '@Url.Action("Instruction","Home")';                  //"/Home/Instruction";
+                   
+                    var name = ServiceId; //pass parameter
+                    var Upload = TotalFile();
+                    //var Orderno = $("#OrderNo").val();
+
+                    var _OrderRef = $("#OrderRef").val();
+
+                    var Clientcode = $("#ClientCode").val();
+                    var user=$("#UserEmail").val();
+
+                    console.log('parameter'+name+' total file'+Upload+' Client Code:'+Clientcode+' O Ref:'+_OrderRef+' user:'+user);
+                    msg = "False";
+                  
+                    //$.get(url,{serviceRef: name, TotalFile: totalUpload,OrderNo:Orderno,ClientCode:Clientcode,UserName:user }, function (data) {
+
+                    //    console.log("Instruction Response is ok");
+
+                    //    document.getElementById("load").style.display = "none";
+                    //    document.getElementById("Sendbtn").style.display = "block";
+                    //    // $('#loadingmessage').hide(); // hide the loading message
+                    //    $("#target").html(data);
+
+                    //});
+
+                    $.ajax({
+
+                        type: 'GET',
+                        url: '@Url.Action("Instruction","Home")',
+
+                        data: {
+                            serviceRef: name,
+                            TotalFile: totalUpload,
+                            OrderRef: _OrderRef,
+                            ClientCode: Clientcode,
+                            UserName: user
+
+                        },
+                        dataType: "html",
+                        contentType: "application/x-www-form-urlencoded; charset=UTF-8", // this is the default value, so it's optional
+
+                        success: function (result) {
+                            console.log("Instruction Response is ok");
+                            document.getElementById("load").style.display = "none";
+                            document.getElementById("Sendbtn").style.display = "block";
+                            $("#target").html(result);
+                            // jQuery("#someContainer").html(result); // result is the HTML text
+                        },
+
+                        error: function (jqXHR, exception) {
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                                msg = 'Not connect.\n Verify Network.Try again.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404].Try again.';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].Try again.';
+                            } else if (jqXHR.status === 504){
+                                msg = 'Gate way Time out problem.Try again';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.Try Again.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.Try Again';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.Try Again.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                            }
+
+                            document.getElementById("load").style.display = "none";
+                            document.getElementById("Sendbtn").style.display = "block";
+
+                            alert("Error:" + msg);
+                        }
+
+                    });
+
+                } catch (err)
+                {
+                    document.getElementById("load").style.display = "none";
+                    document.getElementById("Sendbtn").style.display = "block";
+                    console.log("Exception while calling Instruction.Exp:"+err.message+" "+err.name+" "+err.description);
+                }
+
+            } else {
+                document.getElementById("load").style.display = "none";
+                document.getElementById("Sendbtn").style.display = "block";
+                alert('Please upload file...');
+            }
+
+        }
+           
+
+        (function () {
+            var show = 'visible'; // state var toggled by interval
+            var time = 500; // milliseconds between each interval
+
+            setInterval(function () {
+                // Toggle our visible state on each interval
+                show = (show === 'hidden') ? 'visible' : 'hidden';
+
+                // Get the cursor elements
+                var cursors = document.getElementsByClassName('cursor');
+                // We could do this outside the interval callback,
+                // but then it wouldn't be kept in sync with the DOM
+
+                // Loop through the cursor elements and update them to the current state
+                for (var i = 0; i < cursors.length; i++) {
+                    cursors[i].style.visibility = show;
+                }
+            }, time);
+        })()
+
+    </script>
+
+
+  

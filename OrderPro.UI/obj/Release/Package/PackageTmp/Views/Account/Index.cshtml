@@ -1,0 +1,141 @@
+﻿@model OrderPro.UI.Models.LoginModel
+
+@using OrderPro.UI.Models
+@{
+   
+    ViewBag.Title = "Log In or Register";
+    LoginModel model = ViewBag.LoginModel as LoginModel;
+    RegisterModel regModel = ViewBag.Register as RegisterModel;
+}
+
+<div id="target">
+<section class="container new-signup">        
+        
+            <aside class="middle">
+                
+             <div class="alert alert-error">
+                  <span class="label label-important" style="color: red">
+                      @ViewBag.LoginError
+                  </span>
+              </div>
+
+    <div id="login-container" class="box-container">
+     
+         @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "credentials_form login-form", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+       @* <form action="/Account/" method="post" class="credentials_form login-form">
+
+            <input type="hidden" name="_csrf_token" value="976dfc68eaf291e33691f45a9b64f898d38e9113">*@
+
+            <h1>Login</h1>
+
+            <div class="social-logins">
+            <a href="#"><img src="~/images/fb-login.png"> </a>
+             
+            <a href="#"><img src="~/images/google-login.png"> </a>
+               
+                                                            <br><br>
+            </div>
+
+            <div class="login-divider">
+                <img src="~/images/or-divider.png">
+                <br><br>
+            </div>
+
+            <ul style="margin-bottom: 10px; margin-top: 0;">
+
+                <li>
+                    <label>Username</label>
+                    
+                     @* @Html.TextBoxFor(m => m.Email, new { @required="required",@placeholder="Enter your username" })*@
+                    <input type="text" id="Email" name="Email" value="" required="required" placeholder="Enter your username">
+                </li>
+
+                <li>
+                    <label>Password</label>
+                    <input type="password" id="LoginPassword" name="LoginPassword" required="required" placeholder="Enter your password">
+                    @* @Html.PasswordFor(m => m.LoginPassword, new { @required="required",@placeholder="Enter your password" })                   
+                    *@
+                   
+                    <p>Forgot? Please <a href="#" id="resetpass" onclick="alert('hited')">reset your password</a></p>
+                </li>
+
+                <li>
+                    @* @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)*@
+
+                    <input type="checkbox" id="RememberMe" name="RememberMe" value="on">
+                    <label for="RememberMe"><span>Remember me</span></label>
+
+                </li>
+               <li>
+                   @* <button id="Submit" class="cpsbtn" style="width: 100px">Login</button>*@
+                    <input type="submit" id="Submit" name="Submit" value="Login" class="cpsbtn" style="width: 100px" onclick="CalPage()">
+                  
+
+                   <a href="@Url.Action("Register","Account")" id="Register" class="cpsbtn register" style="width: 200px">Create New Account</a>
+                </li>
+
+            </ul>
+              <div class="alert alert-error">
+                  <span class="label label-important" style="color: red">
+                      @ViewBag.LoginError
+                  </span>
+              </div>              
+         }
+
+       @*  <button id="Register" class="cpsbtn register" style="width: 200px"  onclick="calReg()">Create New Account</button>*@
+    </div>
+  
+    <img src="/bundles/Ingenclient/images/front-loader.gif" style="display:none;">
+    </aside>            
+    </section>
+
+<script>
+    $('#Register').click(function () {
+
+       
+            alert('hited');
+            var url = "@Url.Action("Register","Account")";
+             $.get(url, function (data) {
+                $("#target").html(data);
+            });
+      
+    })
+
+    function calReg()
+    {
+        alert("Calreg");
+
+        $.ajax({
+
+            type: "GET",
+            dataType: "html",
+           
+            url: '/Account/Register',
+
+            success: function (data) {             
+                $('#target').html(data);
+            },                      
+
+            error: function () {
+                alert("error");
+            }
+        });
+
+       @* try{
+            var url = "@Url.Action("Register","Account")";
+            $.get(url, function (data) {
+                $("#target").html(data);
+            });
+        } catch (err)
+        {
+            alert(err.message);
+        }*@
+    }
+</script>
+
+</div>
+						
+

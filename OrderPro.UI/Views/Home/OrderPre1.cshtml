@@ -1,0 +1,273 @@
+﻿@{
+    
+    //TempData["Order"] = ViewBag.Order;
+    //TempData["ServiceName"] = ViewBag.serviceName;
+    //TempData["ServiceRate"] = ViewBag.ServiceRate;
+    //TempData["UserName"] = ViewBag.UserName;
+
+ 
+ }
+
+<style>
+    .dz-max-files-reached {
+        background-color: red;
+    }
+  /*for radio button*/
+         
+label.btn span {
+  font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-check-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-check-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#c8c8c8;
+border-radius: 3px;
+color: #c8c8c8;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+   /*end radio button*/
+
+    .potentional_info {
+    
+    font-size: 15px !important;
+    }
+</style>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<div id="target">
+
+  
+
+    <section class="container">      
+ 
+        <aside class="complexity_info">
+          @*  <img src="~/bundles/Ingenclient/images/add-ons.png" alt="Drop your Iamges Here">*@
+            <h3>Select Add-ons (optional)</h3>
+            <span>We offer additional service for your images.
+                <br>
+                You can select multiple or leave it blank. It is Optional.</span> </aside>
+
+        <aside class="complexity_selection m_top">
+
+            @if (ViewBag.AddOnsService != null)
+            {
+                foreach (var service in ViewBag.AddOnsService)
+                {
+                <div class="selection_box cmplx">
+                    <h3>@service.Name</h3>
+                    <span class="pricing">+$ @service.Rate per image</span>
+                    <p class="potentional_info">@service.Description<a href="javascript:void(0)" class="sample-image" id="sample-9">[sample]</a></p>
+                    <!--undefined-->
+                    <label id="@service.Reference" onclick="SelectAddOns(this.id)">
+                        <input name="addons" type="checkbox" style="display: none" />
+                        <i class="fa fa-square-o fa-2x"></i>
+                        <i class="fa fa-check-square-o fa-2x"></i>
+                    </label>
+                </div>   
+                }
+            }            
+        </aside>
+
+
+        <aside class="complexity_info">
+            @*<img src="/bundles/Ingenclient/images/schedule.png" alt="schedule">*@
+            <h3>Pick a delivery time </h3>
+            <span>How fast would you like us to deliver your processed images ?<br>
+                You can even have them back within an hour!</span>
+        </aside>
+
+        <aside class="complexity_selection m_top">
+            @if (ViewBag.OrderDelivery != null)
+            {
+                foreach (var delivery in ViewBag.OrderDelivery)
+                {     
+                <div class="selection_box" id="">
+                    <h3>@delivery.Name</h3>
+                    <span class="pricing">(@delivery.Hours Hours)</span>
+                    <p class="potentional_info">@delivery.Description</p>
+                    <label id="@delivery.Reference"  onclick="SelectDelivery(this.id)">
+                        <input name="delivery" type="radio" style="display: none" />
+                        <i class="fa fa-circle-o fa-2x"></i>
+                        <i class="fa fa-check-circle-o fa-2x"></i>
+                    </label>
+                </div>
+                }
+            }
+
+        </aside>
+
+        <input type="text" id="AddonsRefCollection" name="AddonsRefCollection" style="display:none"  />
+        <input type="text" id="DeliveryRef" name="DeliveryRef" style="display:none"/>
+       
+        @Html.Hidden("ServiceRef",(string)ViewBag.serviceRef)
+        @Html.Hidden("OrderRef",(string)ViewBag.OrderRef)
+        @Html.Hidden("UserEmail",(string)ViewBag.UserName)
+       
+
+        <section class="taskProgressor bottom">
+            <div class="buttonset" style="bottom: 230px;">
+                <div id="Sendbtn">
+                    <a id="order" class="button right">Next <span class="arrow">»</span> </a>
+                </div>
+                <div id="load" style="text-align: center;display:none">
+                    <img src="~/Images/ellipsis.gif" height="70px" />
+                </div>
+            </div>          
+        </section>
+      
+    </section>
+
+
+    <script>
+
+        var Addonref="";
+        var DeliveryRef = "";
+
+     
+        var input = 0;
+     
+
+        function SelectAddOns(e) {
+            //alert(e);
+            input++;
+            if (input == 1) {
+                Addonref += e;
+                Addonref += ',';
+            }
+            if (input == 2)
+            {
+                input = 0;
+            }
+        
+            document.getElementById("AddonsRefCollection").value = Addonref;
+            //alert('input'+input+'addonref'+ Addonref);
+        }
+
+        function SelectDelivery(e)
+        {
+           // alert(e);
+            DeliveryRef = e;
+            document.getElementById("DeliveryRef").value = e;
+          //  alert(DeliveryRef);
+
+        }
+
+        $('#order').click(function () {
+
+            if (DeliveryRef == "") {
+                alert('please select a Delivery.');
+            } else {
+                
+                console.log('before hit');
+                DisableButton();
+                try{
+                    var url = '@Url.Action("Payment", "Home")';                  //"/Home/Instruction";
+                    var addons = document.getElementById("AddonsRefCollection").value;// ServiceId;
+                    var deliveryref = document.getElementById("DeliveryRef").value;// TotalFile();
+                    
+                    var orderRef=document.getElementById("OrderRef").value;
+                    var serviceRef=document.getElementById("ServiceRef").value;
+                    var userEmail=document.getElementById("UserEmail").value;                                    
+                    
+                    console.log('parameter: url'+url+' addons'+addons+' delivery ref'+deliveryref+" User:"+userEmail);
+
+                    $.get(url, {AddonsRefCollection:addons,DeliveryRef:deliveryref,ServiceRef:serviceRef,OrderRef:orderRef,UserName:userEmail }, function (data) {
+
+                        console.log("order pre Response is ok");
+
+                        document.getElementById("load").style.display = "none";
+                        document.getElementById("Sendbtn").style.display = "block";
+                        // $('#loadingmessage').hide(); // hide the loading message
+                        $("#target").html(data);
+                        EnableButton();
+                    });
+                }
+                catch (err) {
+                    console.log("Exception while calling Instruction.Exp:" + err.message);
+                    alert(err.message);
+                    EnableButton();
+                }
+            }
+           
+            return false;
+        })
+
+
+
+        function DisableButton() {
+            //Disable Next button after uploading image enable this
+            document.getElementById("load").style.display = "block";        
+            document.getElementById("Sendbtn").style.display = "none";          
+          }
+
+        function EnableButton() {
+            //Enable Next Button
+            document.getElementById("load").style.display = "none";          
+            document.getElementById("Sendbtn").style.display = "block";         
+         }
+     
+    </script>
+</div> 
